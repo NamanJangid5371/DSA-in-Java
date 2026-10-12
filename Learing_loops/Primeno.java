@@ -6,7 +6,7 @@ public class Primeno{
         System.out.print("Enter number to checke weather it is prime or not: ");
         int n = sc.nextInt();
         boolean isPrime = true;
-        for (int i = 2; i<=n-1; i++){
+        for (int i = 2; i<=Math.sqrt(n); i++){
             if (n%i==0){
                 isPrime = false;
             }
