@@ -11,15 +11,19 @@ public class primerange {
         return true;
     }
     public static void primeinrange(int n){
+        int f=0;
         for(int i=2;i<=n;i++){
            if (isPrime(i)){
+            f++;
             System.out.print(i+" ");
+            
            }           
         }
+        System.out.println("no. of prime no:"+f);
         System.out.println();
     }
     public static void main(String[] args) {
-       primeinrange(29);
+       primeinrange(100);
         
     }
 }
